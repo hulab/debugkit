@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DebugKit</string>
+
+    <string-array name="themes">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+</resources>

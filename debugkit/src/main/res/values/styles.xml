@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="toolsButton">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+    <style name="toolsButton.dark">
+        <item name="android:textColor">@color/debug_kit_primary</item>
+        <item name="android:background">@color/debug_kit_background</item>
+    </style>
+
+    <style name="toolsButton.light">
+        <item name="android:textColor">@color/debug_kit_background_black</item>
+        <item name="android:background">@color/debug_kit_primary</item>
+    </style>
+</resources>

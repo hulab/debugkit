@@ -35,7 +35,7 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
         final TextView functionNumber = (TextView) findViewById(R.id.functions_number);
         final Spinner themeSpinner = (Spinner) findViewById(R.id.theme_spinner);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.themes, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.debugkit_themes, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         themeSpinner.setAdapter(adapter);
         themeSpinner.setOnItemSelectedListener(this);

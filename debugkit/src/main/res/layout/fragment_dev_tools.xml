@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tools_panel"
+    android:id="@+id/debugkit_tools_panel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
@@ -25,7 +25,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/tools_minify"
+                android:id="@+id/debugkit_tools_minify"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_alignParentLeft="true"
@@ -33,7 +33,7 @@
                 android:src="@drawable/up" />
 
             <ImageView
-                android:id="@+id/tools_close_button"
+                android:id="@+id/debugkit_tools_close_button"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_alignParentRight="true"
@@ -51,7 +51,7 @@
         </RelativeLayout>
 
         <ScrollView
-            android:id="@+id/console_scroll_view"
+            android:id="@+id/debugkit_console_scroll_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
@@ -59,7 +59,7 @@
             android:animateLayoutChanges="true">
 
             <TextView
-                android:id="@+id/console"
+                android:id="@+id/debugkit_console"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="phone|email|map|web"
@@ -85,7 +85,7 @@
                 android:gravity="center_horizontal">
 
                 <LinearLayout
-                    android:id="@+id/button_container"
+                    android:id="@+id/debugkit_button_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">

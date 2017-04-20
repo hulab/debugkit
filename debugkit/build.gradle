@@ -14,6 +14,7 @@ ext {
 
     siteUrl = 'https://github.com/hulab/debugkit'
     gitUrl = 'https://github.com/hulab/debugkit'
+    vcsUrl = 'https://github.com/hulab/debugkit.git'
 
     libraryVersion = '1.0.0'
 
@@ -24,6 +25,12 @@ ext {
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
+
+    user = project.hasProperty('bintray.user') ? project.property('bintray.user') : System.getenv('BINTRAY_USER')
+    key = project.hasProperty('bintray.apikey') ? project.property('bintray.apikey') : System.getenv('BINTRAY_API_KEY')
+    // jFrog plugin must be declared for this line to work
+    configurations = ['archives']
+    // Package info for BinTray
 }
 
 install {
@@ -36,20 +43,6 @@ install {
     }
 }
 
-bintray {
-    user = project.hasProperty('bintray.user') ? project.property('bintray.user') : System.getenv('BINTRAY_USER')
-    key = project.hasProperty('bintray.apikey') ? project.property('bintray.apikey') : System.getenv('BINTRAY_API_KEY')
-    // jFrog plugin must be declared for this line to work
-    configurations = ['archives']
-    // Package info for BinTray
-    pkg {
-        repo = 'DebugKit'
-        name = 'debugkit'
-        userOrg = user
-        licenses = ['Apache-2.0']
-        vcsUrl = 'https://github.com/hulab/debugkit.git'
-    }
-}
 
 android {
     compileSdkVersion 25

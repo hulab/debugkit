@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">DebugKit</string>
+    <string name="debugkit_app_name">DebugKit</string>
 
-    <string-array name="themes">
+    <string-array name="debugkit_themes">
         <item>Dark</item>
         <item>Light</item>
     </string-array>

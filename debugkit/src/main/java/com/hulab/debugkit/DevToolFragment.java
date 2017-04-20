@@ -72,7 +72,7 @@ public class DevToolFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        LinearLayout mButtonContainer = (LinearLayout) mRootView.findViewById(R.id.button_container);
+        LinearLayout mButtonContainer = (LinearLayout) mRootView.findViewById(R.id.debugkit_button_container);
 
         for (int i = 0; i < mFunctions.size(); i++) {
 
@@ -105,14 +105,14 @@ public class DevToolFragment extends Fragment {
             mButtonContainer.addView(button);
         }
 
-        mConsole = (TextView) mRootView.findViewById(R.id.console);
-        mConsoleContainer = (ScrollView) mRootView.findViewById(R.id.console_scroll_view);
+        mConsole = (TextView) mRootView.findViewById(R.id.debugkit_console);
+        mConsoleContainer = (ScrollView) mRootView.findViewById(R.id.debugkit_console_scroll_view);
 
-        mMinifyButton = mRootView.findViewById(R.id.tools_minify);
+        mMinifyButton = mRootView.findViewById(R.id.debugkit_tools_minify);
 
-        mPanel = mRootView.findViewById(R.id.tools_panel);
+        mPanel = mRootView.findViewById(R.id.debugkit_tools_panel);
 
-        mRootView.findViewById(R.id.tools_close_button).setOnClickListener(new View.OnClickListener() {
+        mRootView.findViewById(R.id.debugkit_tools_close_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (isAdded()) {

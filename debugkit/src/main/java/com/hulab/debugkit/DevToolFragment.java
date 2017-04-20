@@ -64,7 +64,7 @@ public class DevToolFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mInflater = inflater;
-        mRootView = inflater.inflate(R.layout.fragment_dev_tools, container, false);
+        mRootView = inflater.inflate(R.layout.debugkit_fragment_dev_tools, container, false);
         return mRootView;
     }
 
@@ -77,7 +77,7 @@ public class DevToolFragment extends Fragment {
         for (int i = 0; i < mFunctions.size(); i++) {
 
             Button button = (Button) mInflater
-                    .inflate(mTheme == DevToolTheme.DARK ? R.layout.function_button_dark : R.layout.function_button_light, mButtonContainer, false);
+                    .inflate(mTheme == DevToolTheme.DARK ? R.layout.debugkit_function_button_dark : R.layout.debugkit_function_button_light, mButtonContainer, false);
             final DebugFunction function = mFunctions.get(i);
             final String title = "F" + (i + 1);
 

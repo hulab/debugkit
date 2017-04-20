@@ -3,147 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/nebneb/Documents/Android/debugkit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="36ed55c8a9109614c45103833d05aa35626cc184">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_13ba8df32443b852ac255c93ae54d78ac81eae82/classes.dex" />
+        sha1="db36c252f560f6de1d5e13f7bf28fb0efb3bd66a">
+        <dex dex="/Users/nebneb/Documents/Android/debugkit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_dee4dc41a5ec28ae51be95020deb036302980e3a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/1e7c93decf7a5828d330a7d86ac362724c0d7f56/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fa82ddead0bd8f5db64115fa00bd296cd8fdc1af/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/54369e485055ac9251655d2ee69a707c5398af6e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_932761dee1df7e800884c8e26e921637378dd529/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/44e7e801ee63c0fba6a507ad04da4c974342d891/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_30d99bb191713c4b2c5416cd33255fc7fbab8002/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_2aa6bcb1783ad946bf2329f574471e29615ab2c7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/nebneb/Documents/Android/debugkit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a70847fd5eadae7d566900afee7048f2cc5e4464/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/004a8b02482e20e580bb4081695d029e2dd18fd9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="518768f3200963fbfec652f498da2c9d39245234">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc5f76080a3c2ada6231ef3f878d8c36f202bfca/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/fff997496ab80b76b15d13ce4fb852bc3de0d269/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_743f1243985dc825b4b0c75d10b2f1c02439301a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/6de5e825508639a0ba0f2270f56a4c733c3a3849/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4f80206efb6d19d10f34fbe39eb317544fc0b836/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/31f4d002dacebb81d3773a6a360344c2a753b2ab/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f85623284698af273375910c3d1b5966660dbe1c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/ec662c5a2abb2abb33477ac240987260b44ac9ae/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0068e69f94ff05ba00ef167e6a78bbe24acb0944/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/9d8762f7d77470389df1c794f46821400112b0a3/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_018fcd1d3f51caa4ae1510004a4ef33a873ae3de/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/e38c02e9f4995c491cac0e537d363ce4fc3d85ad/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6b025cb59bb57cbe08eac0fda0465751cc384fb/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Nebneb/Documents/Android/DebugKitExample/debugkit/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="822b7185d7a0db278c1fb61672b6ebe503c5b618">
-        <dex dex="/Users/Nebneb/Documents/Android/DebugKitExample/app/build/intermediates/pre-dexed/debug/classes_5b207d1c6a20546a13b3a770c8b6f06f39c3db98.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/cbf1d93795bc8f89b46c63b309785a7a5e1a51f6/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5887d08f21fe166feb6df507f0ccccc2e164ab5f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nebneb/.android/build-cache/f82c0db02bfe31c5fd18cb284b430b5381747e4c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
-        <dex dex="/Users/nebneb/Documents/Android/DebugKitExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_47c06a6758f61346e04c882f5bb1364be87a91c9/classes.dex" />
+        <dex dex="/Users/nebneb/Documents/Android/debugkit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_88c389c39b8b63a8be2c581f3ed6d20be5151939/classes.dex" />
     </item>
 
 </items>

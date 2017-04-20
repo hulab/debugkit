@@ -30,4 +30,11 @@
     <activeProfiles>
         <activeProfile>bintray</activeProfile>
     </activeProfiles>
+    <distributionManagement>
+        <repository>
+            <id>bintray-nebneb-DebugKit</id>
+            <name>nebneb-DebugKit</name>
+            <url>https://api.bintray.com/maven/nebneb/DebugKit/debugkit/;publish=1</url>
+        </repository>
+    </distributionManagement>
 </settings>

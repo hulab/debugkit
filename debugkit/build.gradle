@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/hulab/debugkit'
     gitUrl = 'https://github.com/hulab/debugkit'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.0'
 
     developerId = 'nebneb'
     developerName = 'Pierre-Emmanuel Altieri'
@@ -32,8 +32,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 1
+        versionName "1.0.0"
     }
     buildTypes {
         release {

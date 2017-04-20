@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ExampleActivity"
-            android:label="@string/title_activity_example"
+            android:label="@string/debugkit_example_title_activity_example"
             android:theme="@style/AppTheme.NoActionBar">
 
             <intent-filter>

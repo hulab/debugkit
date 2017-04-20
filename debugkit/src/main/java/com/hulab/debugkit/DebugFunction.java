@@ -30,7 +30,7 @@ public abstract class DebugFunction implements Callable<String> {
      *
      * @param string the message that will be logged to to the console.
      * <p>
-     * {@param string} will be logged in the console on a new line as following:
+     * string will be logged in the console on a new line as following:
      * <br>
      * {@code HH:mm:ss > string}
      *

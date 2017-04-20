@@ -232,7 +232,7 @@ public class DevToolFragment extends Fragment {
      *
      * @param string the message that will be logged to to the console.
      * <p>
-     * {@param string} will be logged in the console on a new line as following:
+     * string will be logged in the console on a new line as following:
      * <br>
      * {@code HH:mm:ss > string}
      *
@@ -284,7 +284,7 @@ public class DevToolFragment extends Fragment {
     /**
      * Set the function list. This will corresponding buttons when calling {@code build()}
      *
-     * @param functions must be a List<{@link DebugFunction}>.
+     * @param functions must be a List of {@link DebugFunction}.
      */
     public void setFunctionList(List<DebugFunction> functions) {
         this.mFunctions = functions;

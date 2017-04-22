@@ -9,7 +9,7 @@ DebugKit lib for Android allows you to use a fancy hovering debug tool to trigge
 # Installation
 ```groovy
 repositories {
-    maven { url 'https://dl.bintray.com/nebneb/DebugKit' }
+    jcenter()
 }
 
 dependencies {

@@ -16,7 +16,7 @@ ext {
     gitUrl = 'https://github.com/hulab/debugkit'
     vcsUrl = 'https://github.com/hulab/debugkit.git'
 
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.3'
 
     developerId = 'nebneb'
     developerName = 'Pierre-Emmanuel Altieri'
@@ -38,7 +38,7 @@ install {
         pom.project {
             group "com.hulab.android"
             artifactId "debugkit"
-            version "1.0.2"
+            version "1.0.3"
         }
     }
 }
@@ -51,8 +51,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
     }
     buildTypes {
         release {

@@ -1,9 +1,3 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
-    package="com.hulab.debugkit">
-
-    <application android:label="@string/debugkit_app_name">
-
-    </application>
+<manifest package="com.hulab.debugkit">
 
 </manifest>

@@ -1,4 +1,5 @@
-# Android DebugKit
+# Android DebugKit 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [ ![Download](https://api.bintray.com/packages/nebneb/DebugKit/debugkit/images/download.svg) ](https://bintray.com/nebneb/DebugKit/debugkit/_latestVersion)
 
 DebugKit lib for Android allows you to use a fancy hovering debug tool to trigger some actions directly in the app. This tool is very useful to trigger some event at runtime, and to have a written feedback directly on your testing phone screen.
 

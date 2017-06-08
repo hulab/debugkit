@@ -15,6 +15,20 @@ import java.util.concurrent.Callable;
 public abstract class DebugFunction implements Callable<String> {
 
     private DevToolFragment mDevToolFragment;
+    public String title = null;
+
+    public DebugFunction() {
+    }
+
+    /**
+     * By default, the buttons of the tool are F1, F2... You can give a title to this button
+     * using this constructor.
+     *
+     * @param title the title of the function you want the button to display
+     */
+    public DebugFunction(String title) {
+        this.title = title;
+    }
 
     /**
      * The method that will be executed when matching button is clicked.

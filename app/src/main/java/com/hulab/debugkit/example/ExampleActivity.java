@@ -71,6 +71,14 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
                         builder.addFunction(doSomeStuff());
                     }
                 }
+
+                builder.addFunction(new DebugFunction("Do some stuff") {
+                    @Override
+                    public String call() throws Exception {
+                        return "This function has a title";
+                    }
+                });
+
                 builder.setTextSize(mTextSize)
                         .setTheme(mTheme)
                         .build();

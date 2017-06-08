@@ -79,7 +79,13 @@ public class DevToolFragment extends Fragment {
             Button button = (Button) mInflater
                     .inflate(mTheme == DevToolTheme.DARK ? R.layout.debugkit_function_button_dark : R.layout.debugkit_function_button_light, mButtonContainer, false);
             final DebugFunction function = mFunctions.get(i);
-            final String title = "F" + (i + 1);
+            final String title = function.title == null ? "F" + (i + 1) : function.title;
+
+            if (function.title != null) {
+                ViewGroup.LayoutParams params = button.getLayoutParams();
+                params.width = LinearLayout.LayoutParams.WRAP_CONTENT;
+                button.setLayoutParams(params);
+            }
 
             button.setText(title);
 
@@ -231,11 +237,10 @@ public class DevToolFragment extends Fragment {
      * Call this function at runtime if you want to log something in the console.
      *
      * @param string the message that will be logged to to the console.
-     * <p>
-     * string will be logged in the console on a new line as following:
-     * <br>
-     * {@code HH:mm:ss > string}
-     *
+     *               <p>
+     *               string will be logged in the console on a new line as following:
+     *               <br>
+     *               {@code HH:mm:ss > string}
      */
     public void log(final String string) {
         final StringBuilder sb = new StringBuilder(mConsole.getText());
@@ -361,14 +366,6 @@ public class DevToolFragment extends Fragment {
     }
 
     /**
-     * Enum, theme choices for the debug tool.
-     */
-    public enum DevToolTheme {
-        DARK,
-        LIGHT
-    }
-
-    /**
      * Set the console height.
      *
      * @param consoleHeight represents the console height in dp.
@@ -384,5 +381,13 @@ public class DevToolFragment extends Fragment {
      */
     public void setConsoleWidth(int consoleWidth) {
         this.CONSOLE_WIDTH = consoleWidth;
+    }
+
+    /**
+     * Enum, theme choices for the debug tool.
+     */
+    public enum DevToolTheme {
+        DARK,
+        LIGHT
     }
 }

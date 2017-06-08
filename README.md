@@ -37,12 +37,12 @@ builder.addFunction(new DebugFunction() {
                 doSomeStuff();
                 return "Some stuff was done.";
             }
-        }).addFunction(new DebugFunction() {
+        }).addFunction(new DebugFunction("My function") {
             @Override
             public String call() throws Exception {
                 log("doing some stuff again and again...");
                 doSomeStuff();
-                return "Some stuff was done.";
+                return "This function has a title!";
             }
         });                
 

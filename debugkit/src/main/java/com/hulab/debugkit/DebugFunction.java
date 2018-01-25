@@ -75,6 +75,10 @@ public abstract class DebugFunction implements Callable<String> {
     }
 
     public static class Clear extends DebugFunction {
+        public Clear(String title) {
+            super(title);
+        }
+
         @Override
         public String call() throws Exception {
             clear();
@@ -145,7 +149,7 @@ public abstract class DebugFunction implements Callable<String> {
             SharedPreferences preferences = context.getSharedPreferences(FILE_NAME, mode);
             java.util.Map<String, ?> keys = preferences.getAll();
 
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new StringBuilder("\n");
 
             for (java.util.Map.Entry<String, ?> entry : keys.entrySet())
                 sb.append(entry).append(",\n");

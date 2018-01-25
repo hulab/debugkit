@@ -1,5 +1,7 @@
 package com.hulab.debugkit.example;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -15,12 +17,15 @@ import com.hulab.debugkit.DebugFunction;
 import com.hulab.debugkit.DevTool;
 import com.hulab.debugkit.DevToolFragment;
 
+import java.util.Date;
+
 
 public class ExampleActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private int mTextSize = 12;
     private SeekBar mSeekbar;
     private DevToolFragment.DevToolTheme mTheme = DevToolFragment.DevToolTheme.DARK;
+    private String PREFS_FILE_NAME = "preferences";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,14 +77,6 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
                     }
                 }
 
-                builder.addFunction(new DebugFunction("Do some stuff") {
-                    @Override
-                    public String call() throws Exception {
-                        return "This function has a title";
-                    }
-                }).addFunction(new DebugFunction.Clear())
-                .addFunction(new DebugFunction.DumpSharedPreferences("Shared prefs", ExampleActivity.this, "toto"));
-
                 builder.setTextSize(mTextSize)
                         .setTheme(mTheme)
                         .build();
@@ -90,18 +87,24 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
 
         final DevTool.Builder builder = new DevTool.Builder(ExampleActivity.this);
 
-        if (mSeekbar != null) {
-            for (int i = 0; i < mSeekbar.getProgress(); i++) {
-                builder.addFunction(doSomeStuff());
-            }
-        }
-
         builder.addFunction(new DebugFunction("Do some stuff") {
             @Override
             public String call() throws Exception {
                 return "This function has a title";
             }
-        });
+        }).addFunction(new DebugFunction.Clear("Clear"))
+                .addFunction(new DebugFunction("Make ShPrf") {
+                    @Override
+                    public String call() throws Exception {
+                        SharedPreferences.Editor editor = ExampleActivity.this.getSharedPreferences(PREFS_FILE_NAME, Context.MODE_PRIVATE).edit();
+                        editor.putString("UpdatedAt", new Date(System.currentTimeMillis()).toString());
+                        editor.putBoolean("Key 1", true);
+                        editor.putString("Key 2", "value");
+                        editor.putString("Key 3", "value 2");
+                        editor.apply();
+                        return "Preferences file has been created.";
+                    }
+                }).addFunction(new DebugFunction.DumpSharedPreferences("Shared prefs", PREFS_FILE_NAME));
 
         builder.setTextSize(mTextSize)
                 .setTheme(mTheme)

@@ -92,7 +92,8 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
             public String call() throws Exception {
                 return "This function has a title";
             }
-        }).addFunction(new DebugFunction.Clear("Clear"))
+        })
+                .addFunction(new DebugFunction.Clear("Clear"))
                 .addFunction(new DebugFunction("Make ShPrf") {
                     @Override
                     public String call() throws Exception {

@@ -45,9 +45,16 @@ builder.addFunction(new DebugFunction() {
                 return "This function has a title!";
             }
         });                
-
-// optional, DevToolFragment.DevToolTheme.DARK is set by default
+        // This is a prebuilt function to clear the console, you can call clear() in any function
+        // as well.
+        .addFunction(new DebugFunction.Clear("Clear"))
+        // This is a prebuilt function to dump the content of your shared preferences file.
+        .addFunction(new DebugFunction.DumpSharedPreferences("Shared prefs", PREFS_FILE_NAME));
+ 
+        // optional, DevToolFragment.DevToolTheme.DARK is set by default
 builder.setTheme(DevToolFragment.DevToolTheme.DARK)
+        //you can set the initial position of your debug tool (0,0) by default
+       .displayAt(100, 100)
        .build();
 ```
 

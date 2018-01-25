@@ -26,6 +26,8 @@ public class DevTool {
 
         private DevToolFragment.DevToolTheme mTheme = DevToolFragment.DevToolTheme.DARK;
         private Integer mTextSize = null;
+        private float startX = 0;
+        private float starty = 0;
 
         /**
          * Constructor
@@ -77,6 +79,19 @@ public class DevTool {
             return this;
         }
 
+
+        /**
+         * Set the initial position of the debug tool. The tool is displayed (0,0) by default.
+         * @param x
+         * @param y
+         * @return this to allow chaining.
+         */
+        public Builder displayAt(float x, float y) {
+            this.startX = x;
+            this.starty = y;
+            return this;
+        }
+
         /**
          * Build the tool and show it.
          *
@@ -89,6 +104,8 @@ public class DevTool {
 
                 if (mTextSize != null)
                     fragment.setConsoleTextSize(mTextSize);
+
+                fragment.displayAt(startX, starty);
 
                 try {
                     FragmentManager fragmentManager = activity.getFragmentManager();

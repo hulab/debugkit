@@ -50,11 +50,18 @@ public class DevToolFragment extends Fragment {
     private float dX;
     private float dY;
 
+    private float startX = 0;
+    private float startY = 0;
+
     private DevToolTheme mTheme = DevToolTheme.DARK;
 
     public DevToolFragment() {
     }
 
+    void displayAt(float x, float y) {
+        this.startX = x;
+        this.startY = y;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -149,6 +156,9 @@ public class DevToolFragment extends Fragment {
         layoutParams.width = dpTopX(CONSOLE_WIDTH);
         mConsole.setLayoutParams(layoutParams);
         mConsole.setMinimumHeight(dpTopX(CONSOLE_HEIGHT));
+
+        view.setX(startX);
+        view.setY(startY);
 
         mMinifyButton.setTag(mMinifyButton.getId(), false);
         mMinifyButton.setOnClickListener(new View.OnClickListener() {

@@ -107,6 +107,7 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
                 }).addFunction(new DebugFunction.DumpSharedPreferences("Shared prefs", PREFS_FILE_NAME));
 
         builder.setTextSize(mTextSize)
+                .displayAt(50,200)
                 .setTheme(mTheme)
                 .build();
     }

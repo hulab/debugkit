@@ -77,7 +77,8 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
                     public String call() throws Exception {
                         return "This function has a title";
                     }
-                });
+                }).addFunction(new DebugFunction.Clear())
+                .addFunction(new DebugFunction.DumpSharedPreferences("Shared prefs", ExampleActivity.this, "toto"));
 
                 builder.setTextSize(mTextSize)
                         .setTheme(mTheme)
@@ -86,6 +87,25 @@ public class ExampleActivity extends AppCompatActivity implements AdapterView.On
                 // builder.getTool().changeConsoleTextSize(mTextSize);
             }
         });
+
+        final DevTool.Builder builder = new DevTool.Builder(ExampleActivity.this);
+
+        if (mSeekbar != null) {
+            for (int i = 0; i < mSeekbar.getProgress(); i++) {
+                builder.addFunction(doSomeStuff());
+            }
+        }
+
+        builder.addFunction(new DebugFunction("Do some stuff") {
+            @Override
+            public String call() throws Exception {
+                return "This function has a title";
+            }
+        });
+
+        builder.setTextSize(mTextSize)
+                .setTheme(mTheme)
+                .build();
     }
 
     private DebugFunction doSomeStuff() {

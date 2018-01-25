@@ -97,8 +97,6 @@ public class DevToolFragment extends Fragment {
                             String result = function.call();
                             if (result != null)
                                 log(title + ": " + result);
-                            else
-                                log(title + " was called");
                         } else
                             log(title + " is undefined");
                     } catch (Exception e) {
@@ -248,6 +246,14 @@ public class DevToolFragment extends Fragment {
         sb.append(getCurrentTime()).append(" > ");
         sb.append(string);
         write(sb.toString());
+    }
+
+    /**
+     * Call this function at runtime if you want to clear the console.
+     */
+    public void clear() {
+        mConsole.setText("");
+        softLog("ready.");
     }
 
     private void softLog(String string) {

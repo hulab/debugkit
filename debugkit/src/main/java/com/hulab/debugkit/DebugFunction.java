@@ -33,6 +33,10 @@ public abstract class DebugFunction implements Callable<String> {
         this.title = title;
     }
 
+    protected Context getContext() {
+        return mDevToolFragment.getActivity();
+    }
+
     /**
      * The method that will be executed when matching button is clicked.
      *
@@ -78,41 +82,63 @@ public abstract class DebugFunction implements Callable<String> {
         }
     }
 
+    /**
+     * This is a sample function to dump shared preferences
+     */
     public static class DumpSharedPreferences extends DebugFunction {
         private String FILE_NAME;
         private int mode = Context.MODE_PRIVATE;
-        private Context mContext;
 
         private DumpSharedPreferences() {
         }
 
-        public DumpSharedPreferences(String title, Context context, String fileName, int mode) {
+        /**
+         * Constructor
+         *
+         * @param title the title of the function
+         * @param fileName the name of your shared preference file
+         * @param mode the file creation mode. By default {@link android.content.Context#MODE_PRIVATE Context.MODE_PRIVATE}
+         */
+        public DumpSharedPreferences(String title, String fileName, int mode) {
             super(title);
             this.FILE_NAME = fileName;
             this.mode = mode;
-            this.mContext = context;
         }
 
-        public DumpSharedPreferences(String title, Context context, String fileName) {
+        /**
+         * Constructor
+         *
+         * @param title the title of the function
+         * @param fileName the name of your shared preference file
+         */
+        public DumpSharedPreferences(String title, String fileName) {
             super(title);
             this.FILE_NAME = fileName;
-            this.mContext = context;
         }
 
-        public DumpSharedPreferences(Context context, String fileName, int mode) {
+        /**
+         * Constructor
+         *
+         * @param fileName the name of your shared preference file
+         * @param mode the file creation mode. By default {@link android.content.Context#MODE_PRIVATE Context.MODE_PRIVATE}
+         */
+        public DumpSharedPreferences(String fileName, int mode) {
             this.FILE_NAME = fileName;
             this.mode = mode;
-            this.mContext = context;
         }
 
-        public DumpSharedPreferences(Context context, String fileName) {
+        /**
+         * Constructor
+         *
+         * @param fileName the name of your shared preference file
+         */
+        public DumpSharedPreferences(String fileName) {
             this.FILE_NAME = fileName;
-            this.mContext = context;
         }
 
         @Override
         public String call() throws Exception {
-            return dumpSharedPreferences(mContext);
+            return dumpSharedPreferences(this.getContext());
         }
 
         private String dumpSharedPreferences(Context context) {
@@ -128,4 +154,6 @@ public abstract class DebugFunction implements Callable<String> {
         }
 
     }
+
+
 }

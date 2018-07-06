@@ -84,9 +84,9 @@
             android:layout_height="48dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Then click or pull to get a debugTool" />
+            android:text="Then click to get a debugTool" />
 
         <Space
             android:layout_width="match_parent"

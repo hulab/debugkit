@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.hulab.android:debugkit:1.2.0'
+    compile 'com.hulab.android:debugkit:1.2.1'
 }
 ```
 

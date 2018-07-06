@@ -7,6 +7,11 @@ DebugKit lib for Android allows you to use a fancy hovering debug tool to trigge
 
 * Android SDK 15+
 
+## Example
+
+You can download an example apk here :
+[DebugKit-Example.apk](https://github.com/hulab/debugkit/blob/master/resources/DebugKit-Example.apk)
+
 # Installation
 ```groovy
 repositories {
